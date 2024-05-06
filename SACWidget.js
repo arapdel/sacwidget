@@ -85,17 +85,17 @@
 	  const testString = urlVal + " " + promptVal + " " + tokenVal;
 	  const generateButton = this.shadowRoot.getElementById("generate-button");
       generateButton.addEventListener("click", async () => {
-        //const promptInput = this.shadowRoot.getElementById("prompt-input");
+        const promptInput = this.shadowRoot.getElementById("prompt-input");
         //const generatedText = this.shadowRoot.getElementById("generated-text");
         generatedText.value = "Finding result...";
-        //const promptText = promptInput.value;
+        const promptText = promptInput.value;
 		
 		//generatedText.value = testString;
 				
         const response = await fetch(urlVal, {
           method: "POST",
 		  body: JSON.stringify({
-            "prompt": promptVal, 
+            "prompt": promptText, 
 			"token": tokenVal
           })
         });
