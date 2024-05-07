@@ -90,18 +90,18 @@
         generatedText.value = "Finding result...";
         const promptText = promptInput.value;
 		
-		generatedText.value = promptText;
+		//generatedText.value = testString;
 				
-        // const response = await fetch(urlVal, {
-          // method: "POST",
-		  // body: JSON.stringify({
-            // "prompt": promptText, 
-			// "token": tokenVal
-          // })
-        // });
-        // const result = await response.json();
-		// const resultText = result.body;
-		// generatedText.value = resultText;
+        const response = await fetch(urlVal, {
+          method: "POST",
+		  body: JSON.stringify({
+            "prompt": promptText, 
+			"token": tokenVal
+          })
+        });
+        const result = await response.json();
+		const resultText = result.body;
+		generatedText.value = resultText;
 		
       });
     }
