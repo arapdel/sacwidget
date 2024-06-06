@@ -22,7 +22,7 @@
   #prompt-input {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #bfbfbf;
     border-radius: 5px;
     width: 70%;
   }
@@ -31,9 +31,9 @@
   #generate-button {
     padding: 10px;
     font-size: 16px;
-    background-color: #3cb6a9;
-    color: #fff;
-    border: none;
+    background-color: #f7f7f7;
+    color: #7bbc25;
+	border: 1px solid #bfbfbf;
     border-radius: 5px;
     cursor: pointer;
     width: 25%;
@@ -43,17 +43,17 @@
   #generated-text {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #bfbfbf;
     border-radius: 5px;
   width:96%;
   }
       </style>
      <div>
   <center>
-  <h1>DPO GenAI Integration Test Widget</h1></center>
+  <h2>DPO Assistant</h2></center>
     <div class="input-container">
-      <input type="text" id="prompt-input" placeholder="Test Mode: Leave blank and press button for now">
-      <button id="generate-button">Call Lambda function</button>
+      <input type="text" id="prompt-input" placeholder="Ask a question...">
+      <button id="generate-button">Send</button>
     </div>
     <textarea id="generated-text" rows="10" cols="50" readonly></ textarea>
   </div>
