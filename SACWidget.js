@@ -100,7 +100,7 @@
           })
         });
         const result = await response.json();
-		const resultText = result.body;
+		const resultText = result.body.response;
 		generatedText.value = resultText;
 		
       });
