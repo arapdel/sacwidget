@@ -100,8 +100,8 @@
           })
         });
         const result = await response.json();
-		const resultText = result.body.response;
-		generatedText.value = resultText;
+		const resultJson = JSON.parse(result.body);
+		generatedText.value = resultJson.response;
 		
       });
     }
