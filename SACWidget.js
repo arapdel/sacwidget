@@ -50,7 +50,7 @@
       </style>
      <div>
   <center>
-  <h2>DPO Assistant</h2></center>
+  <h2>NLP Assistant</h2></center>
     <div class="input-container">
       <input type="text" id="prompt-input" placeholder="Ask a question...">
       <button id="generate-button">Send</button>
